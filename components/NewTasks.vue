@@ -29,7 +29,7 @@ function createTask(e: Event){
    v-model="title"
    @keydown.tab="createTask"
    @keyup.enter="createTask"
-   class="foucs:bg-white focus:shadow resize-none rounded w-full border-none"
+   class="focus:bg-white focus:shadow resize-none rounded w-full border-none bg-transparent p-2 cursor-pointer"
    :class = "{
     'h-7' : !focused,
     'h-20' : focused,
