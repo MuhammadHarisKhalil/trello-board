@@ -18,6 +18,7 @@
     { id : nanoid(),title : "QA",task : [] },
     { id : nanoid(),title : "Complete",task : [] },
   ]);
+  const alt = useKeyModifier("Alt");
 </script>
 <template>
  <div>
@@ -37,7 +38,7 @@
      </header>
      <draggable
       v-model="column.task"
-      group="tasks"
+      :group="{name: 'tasks', pull: alt ? 'clone' : true}"
       item-key="id"
       handle=".drag-handle"
       :animation="150"
