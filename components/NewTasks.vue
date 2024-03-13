@@ -38,7 +38,7 @@ function createTask(e: Event){
    @focus="focused = true"
    @blur="focused = false"
    :placeholder="!focused ? 'Add a card' : 'Enter a title for this card'"
-   ></textarea>
+   />
    
   </div>
 </template>
