@@ -49,7 +49,7 @@
         </div>
        </template>
        </draggable>  
-     <button class="text-gray-500"> + Add  a card</button>
+     <NewTasks @add = "column.task.push($event)" />
     </div>
    </template>
    </draggable>
